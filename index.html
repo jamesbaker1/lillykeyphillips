@@ -72,8 +72,8 @@
 				const ambient = new THREE.HemisphereLight( 0xffffff, 0x444444, 0.05 );
 				scene.add( ambient );
 
-				const loader = new THREE.TextureLoader().setPath( 'textures/' );
-				const filenames = [ 'disturb.jpg', 'colors.png', 'uv_grid_opengl.jpg' ];
+				const loader = new THREE.TextureLoader().setPath( './' );
+				const filenames = [ 'disturb.jpeg' ];
 
 				const textures = { none: null };
 
@@ -122,7 +122,7 @@
 
 				//
 
-				new PLYLoader().load( 'models/ply/binary/Lucy100k.ply', function ( geometry ) {
+				new PLYLoader().load( './Lucy100k.ply', function ( geometry ) {
 
 					geometry.scale( 0.024, 0.024, 0.024 );
 					geometry.computeVertexNormals();

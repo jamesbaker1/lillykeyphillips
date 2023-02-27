@@ -10,7 +10,7 @@
 
 		<div id="info">
 			<!-- <a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> webgl - spotlight<br /> -->
-			Lilly Key Phillips2
+			Lilly Key Phillips
 		</div>
 
 		<!-- Import maps polyfill -->
@@ -78,18 +78,18 @@
 
 				const textures = { none: null };
 
-				for ( let i = 0; i < filenames.length; i ++ ) {
+				// for ( let i = 0; i < filenames.length; i ++ ) {
 
-					const filename = filenames[ i ];
+					// const filename = filenames[ i ];
 
-					const texture = loader.load( filename );
+					const texture = loader.load( 'disturb.jpg' );
 					texture.minFilter = THREE.LinearFilter;
 					texture.magFilter = THREE.LinearFilter;
 					texture.encoding = THREE.sRGBEncoding;
 
 					textures[ filename ] = texture;
 
-				}
+				// }
 
 				spotLight = new THREE.SpotLight( 0xffffff, 5 );
 				spotLight.position.set( 25, 50, 25 );

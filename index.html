@@ -19,7 +19,7 @@
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "../build/three.module.js",
+					"three": "./three.module.js",
 					"three/addons/": "./jsm/"
 				}
 			}
@@ -29,10 +29,10 @@
 
 			import * as THREE from 'three';
 
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { GUI } from './lil-gui.module.min.js';
 
-			import { PLYLoader } from 'three/addons/loaders/PLYLoader.js';
-			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { PLYLoader } from './PLYLoader.js';
+			import { OrbitControls } from './OrbitControls.js';
 
 			let renderer, scene, camera;
 

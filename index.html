@@ -73,8 +73,8 @@
 				const ambient = new THREE.HemisphereLight( 0xffffff, 0x444444, 0.05 );
 				scene.add( ambient );
 
-				const loader = new THREE.TextureLoader().setPath( './' );
-				const filenames = [ 'disturb.jpeg' ];
+				const loader = new THREE.TextureLoader();
+				const filenames = [ 'disturb.jpg' ];
 
 				const textures = { none: null };
 
@@ -97,7 +97,7 @@
 				spotLight.penumbra = 1;
 				spotLight.decay = 2;
 				spotLight.distance = 100;
-				spotLight.map = textures[ 'disturb.jpeg' ];
+				spotLight.map = textures[ 'disturb.jpg' ];
 
 				spotLight.castShadow = true;
 				spotLight.shadow.mapSize.width = 1024;

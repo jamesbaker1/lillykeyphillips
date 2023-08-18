@@ -89,3 +89,39 @@ a, button, input, select {
 	margin-top: 20px;
 	padding: 10px;
 }
+
+
+#arrow i {
+	position: absolute;
+	top: 0;
+	transition: top ease 0.5s;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+	z-index: 1; /* TODO Solve this in HTML */
+  }
+  #arrow:hover i {
+	top: -10px;
+  }
+
+  .item {
+	background-color: black;
+	display: flex;
+	width: 100px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	transition: transform ease 300ms;
+  }
+  
+  .item:hover {
+	transform: translate(0, -10px);
+  }
